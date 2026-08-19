@@ -5,7 +5,7 @@ const aircraft=[
 {id:"N172MN",type:"Cessna 172S",name:"North Star",state:"Available",meta:"Brainerd · 4 seats",hrs:"46 hr",due:"100-hour inspection",tone:"green",icon:"✈"},
 {id:"N612ML",type:"Cessna 172S",name:"Lakes Country",state:"In flight",meta:"Returning 2:40 PM",hrs:"31 hr",due:"Oil service",tone:"blue",icon:"✈"},
 {id:"N208MN",type:"Kodiak 100",name:"Timberwolf",state:"Available",meta:"Bemidji · 10 seats",hrs:"18 hr",due:"Phase inspection",tone:"green",icon:"➤"},
-{id:"N44MN",type:"Robinson R44",name:"Canopy",state:"Maintenance",meta:"Expected Aug 20",hrs:"Due now",due:"50-hour inspection",tone:"sand",icon:"✣"}];
+{id:"N839RM",type:"Robinson R44",name:"Canopy",state:"Maintenance",meta:"Expected Aug 20",hrs:"Due now",due:"50-hour inspection",tone:"sand",icon:"✣"}];
 const requests=[
 {initials:"LM",name:"Leah M.",route:"KBRD → North Shore Nursery",time:"Today · 1:30 PM",aircraft:"N612ML",status:"In flight",color:"blue"},
 {initials:"JT",name:"Jordan T.",route:"KBRD → Red Lake Project",time:"Tomorrow · 7:00 AM",aircraft:"N208MN",status:"Ready",color:"green"},
