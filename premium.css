@@ -33,3 +33,60 @@ body{min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 12
 @media(max-width:760px){.journey-masthead{background-position:64% 55%}}
 @media(max-width:760px){.confirmation-shell{background-size:auto 440px;background-position:right top;background-image:linear-gradient(180deg,rgba(12,46,38,.94) 0,rgba(19,65,53,.88) 200px,rgba(247,246,241,.99) 315px),url('public/og.png')}.simple-status-head{background-position:center bottom}}
 @media(min-width:761px) and (max-width:1024px){.request-shell{max-width:920px}.place-grid{grid-template-columns:1fr 1fr}.itinerary-leg>strong{min-width:0}}
+
+/* Functional screens use texture and color only: no customer-form imagery. */
+.request-shell:before,.status-shell:before{display:none!important;background-image:none!important}
+.journey-masthead{min-height:104px;padding:18px 24px;margin-bottom:18px;background:linear-gradient(125deg,#153f35,#285d4e 62%,#557f72);border:0;border-radius:16px;box-shadow:0 14px 38px rgba(22,63,53,.12)}
+.journey-masthead .request-head{width:100%;color:#fff}
+.journey-masthead .request-head .back-link{margin-bottom:12px;color:#dce9e4}
+.journey-masthead .request-head .eyebrow{color:#bdd3cb}
+.confirmation-shell{max-width:680px;margin:42px auto 90px;padding:32px 28px 26px;background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(239,244,240,.96));border:1px solid rgba(127,157,144,.48);border-top:4px solid var(--pine);border-radius:20px;box-shadow:0 24px 70px rgba(22,63,53,.11)}
+.confirmation-shell>.eyebrow{color:var(--muted)}
+.confirmation-shell>h1{color:var(--pine);text-shadow:none}
+.confirmation-card{margin-top:24px}
+.simple-status-head{min-height:0;padding:20px 22px;background:linear-gradient(125deg,#153f35,#285d4e 68%,#557f72);border:0}
+.simple-status-head>p:last-child{color:#e4eeea}
+
+@media(max-width:760px){
+  .site-header{height:52px;padding:0 12px}
+  .mark{width:31px;height:31px;font-size:10px}.wordmark strong{font-size:14px}.wordmark small{font-size:6px}.profile{width:30px;height:30px;font-size:8px}
+  .request-shell{margin:8px auto 86px;padding:0 10px}
+  .journey-masthead{min-height:0;margin:0 0 6px;padding:7px 2px;background:none;border:0;border-radius:0;box-shadow:none}
+  .journey-masthead .request-head{width:100%;color:var(--pine)}
+  .journey-masthead .request-head .back-link{display:none}
+  .journey-masthead .request-head .eyebrow{margin-bottom:2px;color:var(--muted);font-size:7px}
+  .journey-masthead .request-head h1{margin:0;font-size:24px;line-height:1.05;color:var(--pine)}
+  .step-bar{height:27px;margin:2px 2px 7px;justify-content:space-between}
+  .step-bar span{gap:4px}.step-bar span i{width:20px;height:20px}.step-bar span:not(:last-child):after{width:40px;margin:0 4px}
+  .request-card{padding:10px;border-radius:12px}
+  .step-1 .requester-line{display:none}
+  .step-1 .trip-type-first{margin:0 0 8px;padding:0;border:0}
+  .step-1 .trip-type-first>.eyebrow{margin-bottom:4px;font-size:7px}
+  .step-1 .airline-tabs{margin:0}.step-1 .airline-tabs button{min-height:34px;padding:6px 3px;font-size:8px}
+  .step-1 .field-title{display:none}
+  .step-1 .field-section+.field-section{margin-top:8px;padding-top:8px}
+  .step-1 .place-grid{gap:6px}
+  .step-1 .place-card{padding:7px 8px;border-radius:9px;box-shadow:none}
+  .step-1 .place-card label>span{margin-bottom:3px;font-size:7px}
+  .step-1 .place-card input{padding:9px 10px;font-size:10px}
+  .step-1 .place-state,.step-1 .place-suggestions,.step-1 .map-preview,.step-1 .map-caption,.step-1 .live-itinerary,.step-1 .map-disclaimer,.step-1 .immediate-availability,.step-1 .ops-time-note{display:none}
+  .step-1:not(.type-multi) .route-add-stop{display:none}
+  .step-1 .route-add-stop{position:static;margin:5px 0;padding:8px;box-shadow:none;font-size:8px}
+  .step-1 .date-grid{grid-template-columns:1fr 1fr;gap:6px}
+  .step-1 .date-grid label>span{margin-bottom:3px;font-size:7px}
+  .step-1 .date-grid input{padding:8px 7px;font-size:10px}
+  .step-1 .departure-time-field{gap:3px}
+  .step-1 .departure-tbd{font-size:7px}
+  .step-1 .return-label{grid-column:1/-1}
+  .request-shell .form-actions{position:fixed;z-index:35;left:10px;right:10px;bottom:72px;margin:0;padding:7px;background:rgba(247,246,241,.96);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 32px rgba(22,63,53,.18);backdrop-filter:blur(12px)}
+  .request-shell .form-actions .secondary{display:none}
+  .request-shell .form-actions .primary{width:100%;padding:12px}
+  .confirmation-shell{margin:16px 10px 86px;padding:24px 16px 20px;background:linear-gradient(145deg,#fff,#edf3ef);border-radius:16px}
+  .confirmation-icon{width:44px;height:44px;margin-bottom:12px;border:0}
+  .confirmation-shell h1{font-size:29px;margin-bottom:8px}
+  .confirmation-card{margin-top:18px;padding:14px}
+  .status-shell.simple-status{margin-top:14px}
+  .simple-status-head{padding:15px 16px;border-radius:13px}
+  .simple-status-head h1{font-size:29px}
+  .simple-status-head>p:last-child{font-size:8px}
+}
