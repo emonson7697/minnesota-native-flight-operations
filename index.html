@@ -60,7 +60,13 @@ function placeCard(which,title){const airport=state[which+'Kind']==='airport';co
 
 function showHome(){setView('home');document.getElementById('app').innerHTML=`
   <section class="home-shell">
-    <div class="home-intro"><p class="eyebrow">Tuesday, August 18</p><h1>Where can we take you?</h1><p>Choose your route, dates, and travelers.</p><button class="primary large" onclick="startRequest()">Flight Request <span>→</span></button></div>
+    <section class="customer-hero" aria-label="Minnesota Native Air">
+      <img src="public/og.png" alt="Minnesota lakes, native grasses, and a small aircraft in flight">
+      <div class="hero-action">
+        <div><p class="eyebrow">Welcome, Joe</p><p>Choose your route, dates, and travelers.</p></div>
+        <button class="primary large" onclick="startRequest()">Flight Request <span>→</span></button>
+      </div>
+    </section>
     <section class="current-trip">
       <div class="trip-top"><div><p class="eyebrow">Upcoming request · MN-1048</p><span class="status-pill">Pilot assigned</span></div><button class="text-button" onclick="showStatus(true)">View details →</button></div>
       <div class="route-line"><div><strong>KBRD</strong><span>Brainerd</span></div><div class="route-path"><i></i><span>✈</span><i></i><small>2 hr 48 min</small></div><div class="align-right"><strong>KAUS</strong><span>Austin</span></div></div>
