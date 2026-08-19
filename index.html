@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Minnesota Native Air</title>
-  <meta name="description" content="Request and follow private company flights with Minnesota Native Air.">
-  <meta property="og:title" content="Minnesota Native Air">
-  <meta property="og:description" content="A clear, comfortable way to request your next company flight.">
-  <meta property="og:image" content="https://emonson7697.github.io/minnesota-native-flight-operations/public/og.png">
+  <title>Ascent Fleet · Minnesota Native Landscape</title>
+  <meta name="description" content="Private aircraft coordination for Minnesota Native Landscape, presented by Ascent Fleet.">
+  <meta property="og:title" content="Ascent Fleet · Minnesota Native Landscape">
+  <meta property="og:description" content="Private aviation, coordinated.">
+  <meta property="og:image" content="https://fleet.ascentaviation.com/public/og.png">
   <link rel="icon" href="public/favicon.svg">
   <link rel="stylesheet" href="premium.css">
 </head>
 <body>
 <header class="site-header">
-  <button class="wordmark" onclick="showHome()" aria-label="Minnesota Native Air home">
-    <span class="mark">MN</span><span><strong>Minnesota Native</strong><small>Air</small></span>
+  <button class="wordmark" onclick="showHome()" aria-label="Ascent Fleet home">
+    <span class="mark">AF</span><span><strong>Ascent Fleet</strong><small>Minnesota Native Landscape</small></span>
   </button>
   <nav class="top-nav" aria-label="Primary">
     <button data-view="home" class="active" onclick="showHome()">My trips</button>
@@ -25,6 +25,23 @@
 </header>
 
 <main id="app"></main>
+
+<footer class="ascent-footer">
+  <div class="ascent-footer-inner">
+    <a class="powered-by" href="https://www.ascentaviation.com/" target="_blank" rel="noopener" aria-label="Powered by Ascent Aviation">
+      <span>Powered by</span>
+      <img src="public/ascent-aviation-logo.webp" alt="Ascent Aviation">
+    </a>
+    <div class="footer-copy">
+      <strong>Private aviation, coordinated.</strong>
+      <span>© 2026 Ascent Aviation. All rights reserved.</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.ascentaviation.com/" target="_blank" rel="noopener">Ascent Aviation</a>
+      <span>Private proposal environment</span>
+    </div>
+  </div>
+</footer>
 
 <nav class="mobile-nav" aria-label="Mobile navigation">
   <button data-mobile="home" class="active" onclick="showHome()"><span>⌂</span>Trips</button>
@@ -78,7 +95,7 @@ function placeCard(which,title,removable=false){const p=placeData(which);const a
 
 function showHome(){setView('home');document.getElementById('app').innerHTML=`
   <section class="home-shell">
-    <section class="customer-hero" aria-label="Minnesota Native Air">
+    <section class="customer-hero" aria-label="Minnesota Native Landscape fleet">
       <img src="public/og.png" alt="Minnesota lakes, native grasses, and a small aircraft in flight">
       <div class="hero-action">
         <div><p class="eyebrow">Welcome, Joe</p><p>Choose your route, dates, and travelers.</p></div>
