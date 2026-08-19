@@ -90,3 +90,18 @@ body{min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 12
   .simple-status-head h1{font-size:29px}
   .simple-status-head>p:last-child{font-size:8px}
 }
+
+/* Three-step request flow and working location maps. */
+.step-bar{max-width:460px}.map-preview:before,.map-preview:after{display:none}.map-preview iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.map-badge{pointer-events:none;box-shadow:0 2px 9px rgba(22,63,53,.14)}.map-caption a{color:var(--pine);font-weight:900;text-decoration:none}.map-caption a:hover{text-decoration:underline}.stop-dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}.stop-dates>.eyebrow{grid-column:1/-1;margin:0}.review-section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:12px}.review-section-head h2{margin:0;font-size:20px}.review-section-head>span{font-size:8px;font-weight:900;color:var(--muted)}.review-travelers{margin-top:18px;padding-top:20px;border-top:1px solid var(--line)}.review-itinerary>.eyebrow{color:#bad1c8;margin:0 0 8px}.step-2 .request-card{max-width:720px;margin:auto}.step-3 .availability-head{margin-bottom:14px}
+@media(max-width:760px){
+  .step-bar{max-width:none;margin-bottom:9px}.step-bar span b{display:block;font-size:7px}.step-bar span:not(:last-child):after{width:46px}
+  .step-1 .requester-line{display:grid;margin-bottom:8px;padding:8px}.step-1 .requester-line>span{margin:0;font-size:7px}.step-1 .requester-line select{padding:8px;font-size:9px}.step-1 .requester-line small{font-size:7px}
+  .step-1 .place-suggestions{display:flex;margin:5px 0}.step-1 .place-suggestions button{padding:4px 7px;font-size:6px}
+  .step-1 .map-preview{display:block;height:112px}.step-1 .map-caption{display:flex;margin-top:5px}.step-1 .map-caption,.step-1 .map-caption a{font-size:6px}
+  .step-1 .place-grid{gap:8px}.step-1 .place-card{padding:8px}.step-1 .route-add-stop{margin:8px 0}
+  .step-2 .date-grid{grid-template-columns:1fr 1fr;gap:8px}.step-2 .date-grid label>span{font-size:7px}.step-2 .date-grid input{padding:9px;font-size:10px}.step-2 .return-label{grid-column:1/-1}.step-2 .departure-tbd{font-size:7px}
+  .stop-dates{grid-template-columns:1fr;margin-top:14px;padding-top:12px}.stop-dates label>span{font-size:7px}.stop-dates input{padding:9px}
+  .step-3 .availability-head{align-items:center}.step-3 .availability-head h2{font-size:19px}.step-3 .aircraft-list{gap:7px}.step-3 .aircraft-choice{padding:9px}
+  .step-4 .review-hero{padding:12px}.step-4 .review-itinerary{padding:12px}.step-4 .review-grid{grid-template-columns:1fr 1fr}.step-4 .review-grid>div:nth-child(odd){border-right:1px solid var(--line)}.step-4 .review-grid>div:nth-child(n+3){border-top:1px solid var(--line)}.step-4 .profile-row{padding:9px}.review-travelers{margin-top:14px;padding-top:14px}.review-section-head h2{font-size:17px}
+  .request-shell .form-actions{grid-template-columns:.6fr 1fr;gap:7px}.request-shell .form-actions .secondary{display:block}.request-shell .form-actions .primary{width:auto}
+}
